@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(img/fundo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+}
+
+
+section.start {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 16px;
+    height:auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.present {
+    text-align: center;
+    color: white;
+}
+
+.present img {
+    width: 150px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.present h1 {
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.name p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 10pt;
+    font-weight: 300;
+}
+
+.present p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 13pt;
+    margin-bottom: 30px;
+}
+
+.present h3 {
+    text-align: start;
+    margin-top: 50px;
+    margin-bottom: -20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.bio {
+    text-align: start;
+    letter-spacing: 0.8px;
+    line-height: 1.5;
+}
+
+
+.int {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 13px;
+    width: 100%;
+}
+
+.int button {
+    height: 60px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0px 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 10pt;
+    text-align: start;
+    color: black;
+    transition: transform 0.3s ease;
+}
+
+.int button:hover {
+    transform: scale(1.05);
+}
+
+
+.int a {
+    text-decoration: none;
+}
+
+
+@media screen and (min-width: 768px) {
+    section.start {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 40px 60px;
+        gap: 40px;
+    }
+
+    .present, .int {
+        flex: 1;
+    }
+
+    .present {
+        text-align: left;
+    }
+
+    .int {
+        align-items: stretch;
+    }
+    
+    
+}
+
